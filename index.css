@@ -170,7 +170,7 @@ p {
   .nav li,
   a {
     text-decoration: none;
-    font-size: 9px;
+    font-size: 10px;
   }
   body {
     display: flex;
@@ -195,6 +195,7 @@ p {
   #my-name {
     font-size: 40px;
     margin: 10px 0px 15px 0px;
+    font-weight: 800;
   }
   p {
     font-size: 15px;
