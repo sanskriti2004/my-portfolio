@@ -220,9 +220,12 @@ h1 {
   #logo-name {
     font-weight: 500;
   }
+  #projects-logo {
+    width: 18px;
+    height: 18px;
+  }
   #main-logo,
   #skills-logo,
-  #projects-logo,
   #experience-logo,
   #education-logo {
     display: block;
