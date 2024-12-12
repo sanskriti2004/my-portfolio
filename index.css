@@ -406,7 +406,6 @@ p {
     flex-direction: column;
   }
   .main {
-    margin-top: 20px;
     max-width: 80vw;
     display: flex;
     justify-content: center;

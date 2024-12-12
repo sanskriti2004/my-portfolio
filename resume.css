@@ -306,6 +306,8 @@ h1 {
 @media (min-width: 100px) and (max-width: 600px) {
   body {
     overflow-x: hidden;
+    overflow-y: hidden;
+    margin-bottom: 0px;
   }
   .nav img {
     display: none;
@@ -361,13 +363,14 @@ h1 {
     gap: 10px;
     height: 80vh;
     text-align: center;
+    min-height: 89vh;
   }
   h1 {
-    font-size: 25px;
+    margin-top: 10px;
     margin-bottom: 10px;
   }
   #resume {
-    height: 100vh;
+    height: 90vh;
     width: 80vw;
     border: 1px solid rgba(255, 255, 255, 0.313);
     border-radius: 8px;
@@ -376,7 +379,7 @@ h1 {
   #download-link {
     font-size: 11px;
     padding: 3px;
-    margin-bottom: 3px;
+    margin-top: 15px;
   }
   #download-link:hover {
     transition: all 0.3s ease-in-out;
