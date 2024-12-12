@@ -1,3 +1,6 @@
+:root {
+  --hover-color: rgba(255, 0, 183, 0.565);
+}
 * {
   background-color: black;
   color: white;
@@ -43,7 +46,7 @@ li:hover {
   /* background-color: rgba(255, 0, 183, 0.407); */
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 0 40px rgba(255, 0, 183, 0.565);
+  box-shadow: 0 0 40px var(--hover-color);
   border-radius: 8px;
   /* margin: 3px; */
 }
@@ -130,7 +133,231 @@ p {
   border-radius: 8px;
   margin: 3px;
 }*/
+
+@media (min-width: 1000px) and (max-width: 2500px) {
+  #logo-name {
+    font-weight: 500;
+  }
+  #main-logo,
+  #skills-logo,
+  #projects-logo,
+  #experience-logo,
+  #education-logo {
+    display: block;
+    width: 25px;
+    height: 25px;
+  }
+  #resume-logo {
+    display: block;
+    width: 22px;
+    height: 22px;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    gap: 20px;
+    min-height: 8vh;
+    margin-bottom: 10px;
+  }
+  ul,
+  li {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 7px;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+  }
+  li {
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 50px;
+  }
+  .nav li,
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main {
+    margin-top: 20px;
+    max-width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 80vh;
+    gap: 200px;
+  }
+  #profile-pic {
+    width: 260px;
+    height: 260px;
+    margin-top: 20px;
+  }
+  #my-name {
+    font-size: 90px;
+    margin: 0px 0px 15px 0px;
+    font-weight: 800;
+  }
+  p {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  #socials {
+    display: flex;
+    justify-content: left;
+    margin: 5px;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+  }
+  #socials img {
+    width: 40px;
+    height: 40px;
+  }
+  #socials img:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 40px rgba(255, 0, 183, 0.565);
+    border-radius: 8px;
+  }
+  .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    text-align: left;
+    font-size: 30px;
+  }
+  .main-content p {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 200;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  #logo-name {
+    font-weight: 500;
+  }
+  #main-logo,
+  #skills-logo,
+  #projects-logo,
+  #experience-logo,
+  #education-logo {
+    display: block;
+    width: 15px;
+    height: 15px;
+  }
+  #resume-logo {
+    display: block;
+    width: 13px;
+    height: 13px;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    gap: 20px;
+    min-height: 8vh;
+    margin-bottom: 10px;
+  }
+  ul,
+  li {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 7px;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+  }
+  li {
+    text-decoration: none;
+  }
+  .nav li,
+  a {
+    text-decoration: none;
+    font-size: 12px;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main {
+    margin-top: 20px;
+    max-width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+  }
+  #profile-pic {
+    width: 160px;
+    height: 160px;
+    margin-top: 20px;
+  }
+  #my-name {
+    font-size: 50px;
+    margin: 10px 0px 15px 0px;
+    font-weight: 800;
+  }
+  p {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  #socials {
+    display: flex;
+    justify-content: left;
+    margin: 5px;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+  }
+  #socials img {
+    width: 25px;
+    height: 25px;
+  }
+  #socials img:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 40px rgba(255, 0, 183, 0.565);
+    border-radius: 8px;
+    margin: 3px;
+  }
+}
+
 @media (min-width: 100px) and (max-width: 600px) {
+  #logo-name {
+    font-weight: 500;
+  }
   .nav img {
     display: none;
   }
