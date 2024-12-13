@@ -19,16 +19,24 @@ iframe {
   overflow-x: hidden;
 }
 
-@media (min-width: 1110px) and (max-width: 2800px) {
+@media (min-width: 1110px) and (max-width: 10000px) {
   body {
     overflow-x: hidden;
   }
   #logo-name {
     font-weight: 500;
   }
-  #main-logo,
+  #projects-logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  #main-logo {
+    width: 28px;
+    height: 28px;
+    margin: 2px;
+  }
   #skills-logo,
-  #projects-logo,
   #experience-logo,
   #education-logo {
     display: block;
@@ -101,16 +109,6 @@ iframe {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(255, 0, 183, 0.372);
   }
-  #download-link {
-    font-size: 20px;
-    padding: 3px;
-    margin-bottom: 20px;
-  }
-  #download-link:hover {
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 40px rgba(255, 0, 183, 0.565);
-    border-radius: 8px;
-  }
 }
 
 @media (min-width: 600px) and (max-width: 1110px) {
@@ -124,7 +122,10 @@ iframe {
     width: 18px;
     height: 18px;
   }
-  #main-logo,
+  #main-logo {
+    width: 18px;
+    height: 18px;
+  }
   #skills-logo,
   #experience-logo,
   #education-logo {
@@ -143,8 +144,9 @@ iframe {
     justify-content: center;
     width: 100vw;
     gap: 20px;
-    min-height: 8vh;
-    margin-bottom: 5px;
+    min-height: 10vh;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
   }
   ul,
   li {
@@ -153,17 +155,18 @@ iframe {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 7px;
+    gap: 4px;
   }
   .nav-list {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    gap: 25px;
+    gap: 9px;
   }
   li {
     text-decoration: none;
+    padding: 8px;
   }
   .nav li,
   a {
@@ -194,16 +197,6 @@ iframe {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(255, 0, 183, 0.372);
   }
-  #download-link {
-    font-size: 14px;
-    padding: 3px;
-    margin-bottom: 18px;
-  }
-  #download-link:hover {
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 40px rgba(255, 0, 183, 0.565);
-    border-radius: 8px;
-  }
 }
 
 @media (min-width: 100px) and (max-width: 600px) {
@@ -211,6 +204,9 @@ iframe {
     overflow-x: hidden;
     overflow-y: hidden;
     margin-bottom: 0px;
+  }
+  #logo-name {
+    font-weight: 500;
   }
   .nav img {
     display: none;
@@ -224,9 +220,10 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    gap: 10px;
-    min-height: 8vh;
+    width: 90vw;
+    gap: 6px;
+    min-height: 6vh;
+    margin-bottom: 10px;
   }
   ul,
   li {
@@ -235,7 +232,7 @@ iframe {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 7px;
+    gap: 2px;
   }
   .nav-list {
     display: flex;
@@ -250,7 +247,7 @@ iframe {
   .nav li,
   a {
     text-decoration: none;
-    font-size: 10px;
+    font-size: 9px;
   }
   body {
     display: flex;
