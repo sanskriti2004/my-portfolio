@@ -24,6 +24,10 @@ li:hover {
 }
 
 @media (min-width: 1110px) and (max-width: 10000px) {
+  html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
   #logo-name {
     font-weight: 500;
   }
