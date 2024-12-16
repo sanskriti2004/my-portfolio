@@ -337,6 +337,10 @@ li:hover {
 }
 
 @media (min-width: 100px) and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
   #logo-name {
     font-weight: 500;
   }

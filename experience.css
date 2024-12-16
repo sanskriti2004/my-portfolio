@@ -24,9 +24,6 @@ li:hover {
 }
 
 @media (min-width: 1110px) and (max-width: 10000px) {
-  body {
-    overflow-x: hidden;
-  }
   #logo-name {
     font-weight: 500;
   }
@@ -114,9 +111,6 @@ li:hover {
 }
 
 @media (min-width: 600px) and (max-width: 1110px) {
-  body {
-    overflow-x: hidden;
-  }
   #logo-name {
     font-weight: 500;
   }
@@ -200,8 +194,9 @@ li:hover {
 }
 
 @media (min-width: 100px) and (max-width: 600px) {
-  .nav img {
-    display: none;
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
   #logo-name {
     font-weight: 500;

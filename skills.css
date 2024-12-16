@@ -1,0 +1,270 @@
+* {
+  background-color: black;
+  color: white;
+  font-family: Montserrat;
+  margin: 0px;
+  padding: 0px;
+}
+:root {
+  --hover-color: rgba(255, 0, 183, 0.565);
+}
+
+li:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 40px var(--hover-color);
+  border-radius: 8px;
+}
+
+.message {
+  font-weight: 200;
+  border: 1px solid rgba(162, 162, 162, 0.31);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 183, 0.372);
+}
+
+@media (min-width: 1110px) and (max-width: 10000px) {
+  #logo-name {
+    font-weight: 500;
+  }
+  #projects-logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  #main-logo {
+    width: 28px;
+    height: 28px;
+    margin: 2px;
+  }
+  #skills-logo,
+  #experience-logo,
+  #education-logo {
+    display: block;
+    width: 25px;
+    height: 25px;
+  }
+  #resume-logo {
+    display: block;
+    width: 22px;
+    height: 22px;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    gap: 20px;
+    min-height: 8vh;
+    margin-bottom: 10px;
+  }
+  ul,
+  li {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 7px;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+  }
+  li {
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 50px;
+  }
+  .nav li,
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main {
+    margin-top: 20px;
+    max-width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .message {
+    font-size: 15px;
+    border-radius: 18px;
+    padding: 10px 20px 10px 20px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1110px) {
+  body {
+    overflow-x: hidden;
+  }
+  #logo-name {
+    font-weight: 500;
+  }
+  #projects-logo {
+    width: 18px;
+    height: 18px;
+  }
+  #main-logo {
+    width: 18px;
+    height: 18px;
+  }
+  #skills-logo,
+  #experience-logo,
+  #education-logo {
+    display: block;
+    width: 15px;
+    height: 15px;
+  }
+  #resume-logo {
+    display: block;
+    width: 13px;
+    height: 13px;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    gap: 20px;
+    min-height: 10vh;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  ul,
+  li {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 4px;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 9px;
+  }
+  li {
+    text-decoration: none;
+    padding: 8px;
+  }
+  .nav li,
+  a {
+    text-decoration: none;
+    font-size: 12px;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main {
+    max-width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .message {
+    font-size: 12px;
+    border-radius: 15px;
+    padding: 8px 15px 8px 15px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 600px) {
+  .nav img {
+    display: none;
+  }
+  #logo-name {
+    font-weight: 500;
+  }
+  .nav img {
+    display: none;
+  }
+  #main-logo {
+    display: block;
+    width: 15px;
+    height: 15px;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    gap: 6px;
+    min-height: 6vh;
+    margin-bottom: 10px;
+  }
+  ul,
+  li {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2px;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+  }
+  li {
+    text-decoration: none;
+  }
+  .nav li,
+  a {
+    text-decoration: none;
+    font-size: 9px;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 80vh;
+    text-align: center;
+  }
+  .message {
+    font-size: 10px;
+    padding: 5px;
+  }
+  h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
