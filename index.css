@@ -1,6 +1,64 @@
 :root {
   --hover-color: rgba(255, 0, 183, 0.565);
 }
+
+:root {
+  --hover-color: rgba(255, 0, 183, 0.565);
+  --neon-glow: 0 0 20px rgba(255, 0, 183, 0.6);
+  --pulse: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 rgba(255, 0, 183, 0.3);
+  }
+  70% {
+    box-shadow: 0 0 25px rgba(255, 0, 183, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(255, 0, 183, 0);
+  }
+}
+
+* {
+  background-color: black;
+  color: white;
+  font-family: Montserrat;
+  margin: 0px;
+  padding: 0px;
+}
+
+li:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: var(--neon-glow);
+  border-radius: 8px;
+  transform: scale(1.05);
+}
+
+#my-name {
+  color: rgb(255, 0, 183);
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(255, 0, 183, 0.372);
+  margin: 0px;
+  transition: all 0.3s ease-in-out;
+}
+
+#my-name:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 20px rgba(255, 0, 183, 0.6);
+}
+
+#socials img {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#socials img:hover {
+  cursor: pointer;
+  transform: scale(1.2) rotate(5deg);
+  box-shadow: var(--neon-glow);
+}
+
 * {
   background-color: black;
   color: white;
@@ -16,10 +74,6 @@ li:hover {
   border-radius: 8px;
 }
 
-#profile-pic {
-  border-radius: 50%;
-  box-shadow: 0 0 100px rgba(255, 0, 183, 0.204);
-}
 #my-name {
   color: rgb(255, 0, 183);
   font-weight: 600;
@@ -109,11 +163,7 @@ li:hover {
     height: 80vh;
     gap: 200px;
   }
-  #profile-pic {
-    width: 260px;
-    height: 260px;
-    margin-top: 20px;
-  }
+
   #my-name {
     font-size: 90px;
     margin: 0px 0px 15px 0px;
@@ -237,12 +287,7 @@ li:hover {
     align-items: center;
     height: 80vh;
   }
-  #profile-pic {
-    width: 160px;
-    height: 160px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+
   #my-name {
     font-size: 50px;
     margin: 10px 0px 19px 0px;
@@ -338,11 +383,7 @@ li:hover {
     align-items: center;
     height: 80vh;
   }
-  #profile-pic {
-    width: 150px;
-    height: 150px;
-    margin-top: 20px;
-  }
+
   #my-name {
     font-size: 40px;
     margin: 10px 0px 15px 0px;
