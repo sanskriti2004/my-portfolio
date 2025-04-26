@@ -16,11 +16,82 @@ li:hover {
   border-radius: 8px;
 }
 
-.message {
-  font-weight: 200;
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
   border: 1px solid rgba(162, 162, 162, 0.31);
   border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
   box-shadow: 0 0 10px rgba(255, 0, 183, 0.372);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 45vw; /* Two cards per row */
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: 400;
+  margin: 5px;
+}
+
+h2 {
+  font-size: 10px;
+  font-weight: 600;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+.course-name {
+  font-weight: 200;
+}
+
+.subjects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: left;
+  gap: 5px;
+  font-size: 10px;
+  padding-top: 6px;
+}
+
+.subjects p {
+  margin: 2px;
+  border: 1px solid rgba(162, 162, 162, 0.31);
+  border-radius: 10px;
+  padding: 4px 10px;
+}
+
+#score-logo {
+  width: 12px;
+  height: 12px;
+}
+
+.score {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  margin: 5px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(162, 162, 162, 0.31);
 }
 
 @media (min-width: 1110px) and (max-width: 10000px) {
