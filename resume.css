@@ -19,6 +19,22 @@ iframe {
   overflow-x: hidden;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* slight upward slide */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply fade-in to h1 and iframe */
+#resume {
+  animation: fadeIn 1.5s ease-out;
+}
+
 @media (min-width: 1110px) and (max-width: 10000px) {
   body {
     overflow-x: hidden;
@@ -240,7 +256,7 @@ iframe {
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    gap: 10px;
+    gap: 15px;
   }
   li {
     text-decoration: none;
