@@ -94,6 +94,15 @@ li:hover {
   background-color: #61dafb;
   color: #000;
 }
+.skill-item.native:hover {
+  background-color: #20232a; /* React Native dark */
+  color: #61dafb;
+}
+
+.skill-item.next:hover {
+  background-color: #262626;
+  color: #fff;
+}
 .skill-item.html:hover {
   background-color: #e34c26;
   color: #fff;
