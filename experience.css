@@ -112,6 +112,53 @@ li:hover {
     border-radius: 18px;
     padding: 10px 20px 10px 20px;
   }
+  .experience-card {
+    width: 50vw;
+    padding: 25px;
+  }
+
+  .role-description {
+    font-size: 15px;
+  }
+  .role-title {
+    font-size: 25px;
+  }
+  .company-name {
+    font-size: 15px;
+  }
+}
+
+/* Inherits your card styling */
+.experience-card {
+  /* width: 45vw; */
+  border: 1px solid rgba(162, 162, 162, 0.31);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 183, 0.372);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.role-title {
+  /* font-size: 17px; */
+  font-weight: 400;
+  margin: 5px 0;
+  color: white;
+}
+
+.company-name {
+  /* font-size: 10px; */
+  font-weight: 600;
+  margin: 5px 0 10px 0;
+  color: rgba(200, 200, 200, 0.9);
+}
+
+.role-description {
+  /* font-size: 13px; */
+  line-height: 1.5;
+  color: rgba(220, 220, 220, 0.9);
+  margin-top: 5px;
 }
 
 @media (min-width: 600px) and (max-width: 1110px) {
@@ -199,6 +246,20 @@ li:hover {
     border-radius: 15px;
     padding: 8px 15px 8px 15px;
   }
+  .experience-card {
+    width: 50vw;
+    padding: 20px;
+  }
+
+  .role-description {
+    font-size: 15px;
+  }
+  .role-title {
+    font-size: 20px;
+  }
+  .company-name {
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 100px) and (max-width: 600px) {
@@ -272,5 +333,19 @@ li:hover {
   h1 {
     font-size: 30px;
     margin-bottom: 10px;
+  }
+  .experience-card {
+    width: 70vw;
+    padding: 15px;
+  }
+
+  .role-description {
+    font-size: 15px;
+  }
+  .role-title {
+    font-size: 20px;
+  }
+  .company-name {
+    font-size: 15px;
   }
 }
